@@ -1,3 +1,10 @@
-﻿Public Class InternationalCallCalculator
+﻿
 
+Imports System.ComponentModel
+
+Public Class frmCallCalculator
+    Private Sub frmCallCalculator_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        MainMenu.Show()
+        Me.Close()
+    End Sub
 End Class
