@@ -25,6 +25,10 @@ Partial Class frmCallCalculator
         Label2 = New Label()
         Panel1 = New Panel()
         GroupBox1 = New GroupBox()
+        RadioButton4 = New RadioButton()
+        RadioButton3 = New RadioButton()
+        RadioButton2 = New RadioButton()
+        RadioButton1 = New RadioButton()
         CheckBox1 = New CheckBox()
         Label11 = New Label()
         ComboBox1 = New ComboBox()
@@ -42,10 +46,6 @@ Partial Class frmCallCalculator
         Label6 = New Label()
         Label7 = New Label()
         Label8 = New Label()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
-        RadioButton3 = New RadioButton()
-        RadioButton4 = New RadioButton()
         Panel1.SuspendLayout()
         GroupBox1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -56,9 +56,9 @@ Partial Class frmCallCalculator
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Rockwell", 17.855999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(97, 24)
+        Label2.Location = New Point(108, 63)
         Label2.Name = "Label2"
-        Label2.Size = New Size(458, 38)
+        Label2.Size = New Size(537, 44)
         Label2.TabIndex = 2
         Label2.Text = "International Call Calculator"
         ' 
@@ -71,9 +71,10 @@ Partial Class frmCallCalculator
         Panel1.Controls.Add(Label10)
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(Label9)
-        Panel1.Location = New Point(43, 112)
+        Panel1.Location = New Point(48, 133)
+        Panel1.Margin = New Padding(3, 4, 3, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(375, 283)
+        Panel1.Size = New Size(417, 337)
         Panel1.TabIndex = 3
         ' 
         ' GroupBox1
@@ -82,19 +83,73 @@ Partial Class frmCallCalculator
         GroupBox1.Controls.Add(RadioButton3)
         GroupBox1.Controls.Add(RadioButton2)
         GroupBox1.Controls.Add(RadioButton1)
-        GroupBox1.Location = New Point(12, 146)
+        GroupBox1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        GroupBox1.Location = New Point(13, 174)
+        GroupBox1.Margin = New Padding(3, 4, 3, 4)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(345, 79)
+        GroupBox1.Padding = New Padding(3, 4, 3, 4)
+        GroupBox1.Size = New Size(383, 94)
         GroupBox1.TabIndex = 16
         GroupBox1.TabStop = False
         GroupBox1.Text = "Membership Type"
         ' 
+        ' RadioButton4
+        ' 
+        RadioButton4.AutoSize = True
+        RadioButton4.Checked = True
+        RadioButton4.Font = New Font("Segoe UI", 9F)
+        RadioButton4.Location = New Point(269, 48)
+        RadioButton4.Margin = New Padding(3, 4, 3, 4)
+        RadioButton4.Name = "RadioButton4"
+        RadioButton4.Size = New Size(80, 29)
+        RadioButton4.TabIndex = 3
+        RadioButton4.TabStop = True
+        RadioButton4.Text = "None"
+        RadioButton4.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton3
+        ' 
+        RadioButton3.AutoSize = True
+        RadioButton3.Font = New Font("Segoe UI", 9F)
+        RadioButton3.Location = New Point(172, 45)
+        RadioButton3.Margin = New Padding(3, 4, 3, 4)
+        RadioButton3.Name = "RadioButton3"
+        RadioButton3.Size = New Size(91, 29)
+        RadioButton3.TabIndex = 2
+        RadioButton3.Text = "Bronze"
+        RadioButton3.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton2
+        ' 
+        RadioButton2.AutoSize = True
+        RadioButton2.Font = New Font("Segoe UI", 9F)
+        RadioButton2.Location = New Point(88, 42)
+        RadioButton2.Margin = New Padding(3, 4, 3, 4)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(79, 29)
+        RadioButton2.TabIndex = 1
+        RadioButton2.Text = "Silver"
+        RadioButton2.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton1
+        ' 
+        RadioButton1.AutoSize = True
+        RadioButton1.Font = New Font("Segoe UI", 9F)
+        RadioButton1.Location = New Point(11, 39)
+        RadioButton1.Margin = New Padding(3, 4, 3, 4)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(75, 29)
+        RadioButton1.TabIndex = 0
+        RadioButton1.Text = "Gold"
+        RadioButton1.UseVisualStyleBackColor = True
+        ' 
         ' CheckBox1
         ' 
         CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(97, 248)
+        CheckBox1.Location = New Point(185, 294)
+        CheckBox1.Margin = New Padding(3, 4, 3, 4)
         CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(18, 17)
+        CheckBox1.Size = New Size(22, 21)
         CheckBox1.TabIndex = 15
         CheckBox1.UseVisualStyleBackColor = True
         ' 
@@ -102,63 +157,67 @@ Partial Class frmCallCalculator
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI", 9.792F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(12, 242)
+        Label11.Location = New Point(13, 288)
         Label11.Name = "Label11"
-        Label11.Size = New Size(59, 23)
+        Label11.Size = New Size(137, 28)
         Label11.TabIndex = 12
-        Label11.Text = "Movie"
+        Label11.Text = "Evening Calls"
         ' 
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(97, 87)
+        ComboBox1.Location = New Point(181, 103)
+        ComboBox1.Margin = New Padding(3, 4, 3, 4)
         ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(194, 29)
+        ComboBox1.Size = New Size(215, 33)
         ComboBox1.TabIndex = 14
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 9.792F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(12, 91)
+        Label10.Location = New Point(13, 108)
         Label10.Name = "Label10"
-        Label10.Size = New Size(59, 23)
+        Label10.Size = New Size(88, 28)
         Label10.TabIndex = 13
-        Label10.Text = "Movie"
+        Label10.Text = "Country"
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(99, 29)
+        TextBox1.Location = New Point(183, 35)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(192, 29)
+        TextBox1.Size = New Size(213, 31)
         TextBox1.TabIndex = 12
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 9.792F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(12, 29)
+        Label9.Location = New Point(13, 35)
         Label9.Name = "Label9"
-        Label9.Size = New Size(59, 23)
+        Label9.Size = New Size(144, 28)
         Label9.TabIndex = 11
-        Label9.Text = "Movie"
+        Label9.Text = "Length of Call"
         ' 
         ' Panel2
         ' 
         Panel2.Controls.Add(Button3)
         Panel2.Controls.Add(Button2)
         Panel2.Controls.Add(Button1)
-        Panel2.Location = New Point(462, 256)
+        Panel2.Location = New Point(513, 305)
+        Panel2.Margin = New Padding(3, 4, 3, 4)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(162, 247)
+        Panel2.Size = New Size(180, 294)
         Panel2.TabIndex = 4
         ' 
         ' Button3
         ' 
         Button3.Font = New Font("Bahnschrift", 10.9439993F, FontStyle.Bold)
-        Button3.Location = New Point(20, 171)
+        Button3.Location = New Point(22, 204)
+        Button3.Margin = New Padding(3, 4, 3, 4)
         Button3.Name = "Button3"
-        Button3.Size = New Size(125, 30)
+        Button3.Size = New Size(139, 36)
         Button3.TabIndex = 2
         Button3.Text = "END"
         Button3.UseVisualStyleBackColor = True
@@ -166,9 +225,10 @@ Partial Class frmCallCalculator
         ' Button2
         ' 
         Button2.Font = New Font("Bahnschrift", 10.9439993F, FontStyle.Bold)
-        Button2.Location = New Point(20, 96)
+        Button2.Location = New Point(22, 114)
+        Button2.Margin = New Padding(3, 4, 3, 4)
         Button2.Name = "Button2"
-        Button2.Size = New Size(125, 30)
+        Button2.Size = New Size(139, 36)
         Button2.TabIndex = 1
         Button2.Text = "CLEAR"
         Button2.UseVisualStyleBackColor = True
@@ -176,9 +236,10 @@ Partial Class frmCallCalculator
         ' Button1
         ' 
         Button1.Font = New Font("Bahnschrift", 10.9439993F, FontStyle.Bold)
-        Button1.Location = New Point(20, 22)
+        Button1.Location = New Point(22, 26)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(125, 30)
+        Button1.Size = New Size(139, 36)
         Button1.TabIndex = 0
         Button1.Text = "CALCULATE"
         Button1.UseVisualStyleBackColor = True
@@ -191,18 +252,19 @@ Partial Class frmCallCalculator
         Panel3.Controls.Add(Label6)
         Panel3.Controls.Add(Label7)
         Panel3.Controls.Add(Label8)
-        Panel3.Location = New Point(43, 401)
+        Panel3.Location = New Point(48, 477)
+        Panel3.Margin = New Padding(3, 4, 3, 4)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(375, 173)
+        Panel3.Size = New Size(417, 206)
         Panel3.TabIndex = 5
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 9.792F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(12, 32)
+        Label5.Location = New Point(13, 38)
         Label5.Name = "Label5"
-        Label5.Size = New Size(80, 23)
+        Label5.Size = New Size(94, 28)
         Label5.TabIndex = 14
         Label5.Text = "SubTotal"
         ' 
@@ -210,9 +272,9 @@ Partial Class frmCallCalculator
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 9.792F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(12, 79)
+        Label4.Location = New Point(13, 94)
         Label4.Name = "Label4"
-        Label4.Size = New Size(94, 23)
+        Label4.Size = New Size(110, 28)
         Label4.TabIndex = 13
         Label4.Text = "GST (10%)"
         ' 
@@ -220,90 +282,47 @@ Partial Class frmCallCalculator
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 9.792F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(12, 125)
+        Label3.Location = New Point(13, 149)
         Label3.Name = "Label3"
-        Label3.Size = New Size(49, 23)
+        Label3.Size = New Size(59, 28)
         Label3.TabIndex = 12
         Label3.Text = "Total"
         ' 
         ' Label6
         ' 
         Label6.BackColor = Color.White
-        Label6.Location = New Point(121, 127)
+        Label6.Location = New Point(134, 151)
         Label6.Name = "Label6"
-        Label6.Size = New Size(162, 29)
+        Label6.Size = New Size(180, 35)
         Label6.TabIndex = 8
         ' 
         ' Label7
         ' 
         Label7.BackColor = Color.White
-        Label7.Location = New Point(119, 79)
+        Label7.Location = New Point(132, 94)
         Label7.Name = "Label7"
-        Label7.Size = New Size(162, 29)
+        Label7.Size = New Size(180, 35)
         Label7.TabIndex = 7
         ' 
         ' Label8
         ' 
         Label8.BackColor = Color.White
-        Label8.Location = New Point(118, 32)
+        Label8.Location = New Point(131, 38)
         Label8.Name = "Label8"
-        Label8.Size = New Size(162, 29)
+        Label8.Size = New Size(180, 35)
         Label8.TabIndex = 6
-        ' 
-        ' RadioButton1
-        ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(10, 33)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(64, 25)
-        RadioButton1.TabIndex = 0
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "Gold"
-        RadioButton1.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton2
-        ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(79, 35)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(70, 25)
-        RadioButton2.TabIndex = 1
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "Silver"
-        RadioButton2.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton3
-        ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(155, 38)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(79, 25)
-        RadioButton3.TabIndex = 2
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "Bronze"
-        RadioButton3.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton4
-        ' 
-        RadioButton4.AutoSize = True
-        RadioButton4.Location = New Point(242, 40)
-        RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(69, 25)
-        RadioButton4.TabIndex = 3
-        RadioButton4.TabStop = True
-        RadioButton4.Text = "None"
-        RadioButton4.UseVisualStyleBackColor = True
         ' 
         ' frmCallCalculator
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.MintCream
-        ClientSize = New Size(657, 602)
+        ClientSize = New Size(730, 717)
         Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Controls.Add(Label2)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "frmCallCalculator"
         StartPosition = FormStartPosition.CenterScreen
         Panel1.ResumeLayout(False)

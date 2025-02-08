@@ -24,14 +24,16 @@ Partial Class MainMenu
     Private Sub InitializeComponent()
         Button1 = New Button()
         Button2 = New Button()
+        Button3 = New Button()
         SuspendLayout()
         ' 
         ' Button1
         ' 
         Button1.Font = New Font("Segoe UI", 13.8239994F, FontStyle.Bold)
-        Button1.Location = New Point(187, 161)
+        Button1.Location = New Point(208, 98)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(303, 75)
+        Button1.Size = New Size(337, 89)
         Button1.TabIndex = 0
         Button1.Text = "Launch ""Book My Show"""
         Button1.UseVisualStyleBackColor = True
@@ -39,21 +41,35 @@ Partial Class MainMenu
         ' Button2
         ' 
         Button2.Font = New Font("Segoe UI", 13.8239994F, FontStyle.Bold)
-        Button2.Location = New Point(187, 329)
+        Button2.Location = New Point(208, 266)
+        Button2.Margin = New Padding(3, 4, 3, 4)
         Button2.Name = "Button2"
-        Button2.Size = New Size(308, 85)
+        Button2.Size = New Size(342, 101)
         Button2.TabIndex = 1
         Button2.Text = "Launch ""Call Calculator"""
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' Button3
+        ' 
+        Button3.Font = New Font("Segoe UI", 13.8239994F, FontStyle.Bold)
+        Button3.Location = New Point(208, 461)
+        Button3.Margin = New Padding(3, 4, 3, 4)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(342, 101)
+        Button3.TabIndex = 2
+        Button3.Text = "Launch ""Bank ATM"""
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' MainMenu
         ' 
-        AutoScaleDimensions = New SizeF(9F, 21F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.MintCream
-        ClientSize = New Size(657, 602)
+        ClientSize = New Size(730, 717)
+        Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "MainMenu"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
@@ -62,5 +78,6 @@ Partial Class MainMenu
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 
 End Class
